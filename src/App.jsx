@@ -8,11 +8,14 @@ import Safety from './components/Safety';
 import Footer from './components/Footer';
 import LoginModal from './components/LoginModal';
 
-// Mashinalar ro'yxati (Buni keyinchalik API dan olishingiz mumkin)
+
 const carsData = [
-  { id: 1, name: "Ford Fiesta", type: "Economy", image: "https://via.placeholder.com/300x160", seats: 5, transmission: "Auto", age: 21, engine: "1.6L" },
-  { id: 2, name: "Nissan Versa", type: "Compact", image: "https://via.placeholder.com/300x160", seats: 5, transmission: "Auto", age: 21, engine: "1.6L" },
-  { id: 3, name: "Toyota Corolla", type: "Mid-size", image: "https://via.placeholder.com/300x160", seats: 5, transmission: "Auto", age: 21, engine: "1.8L" },
+  { id: 1, name: "Ford Fiesta", type: "Economy Car", image: "/img/car2.png", seats: 5, transmission: "Automatic", age: 21, engine: "1.6 / 2.0 km" },
+  { id: 2, name: "Nissan Versa", type: "Compact Car", image: "/img/car2.png", seats: 5, transmission: "Automatic", age: 21, engine: "1.6 / 2.0 km" },
+  { id: 3, name: "Toyota Corolla", type: "Mid-size Car", image: "/img/car3.png", seats: 5, transmission: "Automatic", age: 21, engine: "1.6 / 2.0 km" },
+  { id: 4, name: "Nissan Rogue", type: "Mid-size SUV", image: "/img/car4.png", seats: 5, transmission: "Automatic", age: 21, engine: "1.6 / 2.0 km" },
+  { id: 5, name: "Chevy Traverse", type: "Full-size SUV", image: "/img/car5.png", seats: 8, transmission: "Automatic", age: 21, engine: "2.5 / 3.6 km" },
+  { id: 6, name: "Nissan Altima", type: "Full-size Car", image: "/img/car6.png", seats: 5, transmission: "Automatic", age: 21, engine: "2.0 / 2.5 km" },
 ];
 
 function App() {
