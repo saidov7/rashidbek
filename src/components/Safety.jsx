@@ -2,45 +2,62 @@ import React from 'react';
 
 const Safety = () => {
   return (
-    <section className="bg-[#1C1C1C] rounded-[40px] p-10 md:p-16 flex flex-col md:flex-row items-center gap-12 my-20">
-      <div className="flex-1">
-        <h2 className="text-4xl font-bold mb-6 leading-tight text-white">
-          Car rental keeps you safe
-        </h2>
-        <p className="text-gray-400 mb-8 leading-relaxed">
-          The safety of our employees and customers is our number one priority. 
-          In addition to taking care of your vehicle, we've taken many opportunities 
-          to enhance the health and safety measures currently practiced in our operations.
-        </p>
+    <section className="relative bg-[#1C1C1C] rounded-[48px] p-8 md:p-16 my-20 overflow-hidden border border-white/5">
+      <div className="flex flex-col md:flex-row items-center gap-12">
         
-        {/* Ikonkalar qatori */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="text-center bg-[#111]/50 p-4 rounded-2xl border border-gray-800">
-            <span className="block text-2xl mb-2">🧼</span>
-            <p className="text-[10px] text-gray-400 uppercase font-bold">Sanitized and cleaned</p>
-          </div>
-          <div className="text-center bg-[#111]/50 p-4 rounded-2xl border border-gray-800">
-            <span className="block text-2xl mb-2">👥</span>
-            <p className="text-[10px] text-gray-400 uppercase font-bold">All our employees wear masks</p>
-          </div>
-          <div className="text-center bg-[#111]/50 p-4 rounded-2xl border border-gray-800">
-            <span className="block text-2xl mb-2">✅</span>
-            <p className="text-[10px] text-gray-400 uppercase font-bold">We stay up to date with CDC</p>
+        {/* Chap tomon: Matnlar va Kartochkalar */}
+        <div className="flex-1 z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
+            Car rental keeps you safe
+          </h2>
+          <p className="text-gray-400 text-base leading-relaxed mb-12 max-w-2xl">
+            The safety of our employees and renters is our number one priority. In addition to being confident your vehicle is cleaned and sanitized every time you rent, you can also feel confident that we will take every opportunity to enhance the health and safety measures currently practiced in our operations.
+          </p>
+
+          {/* 3 ta kichik kartochka */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {/* Kartochka 1 */}
+            <div className="bg-[#111111]/60 backdrop-blur-sm p-6 rounded-[32px] border border-white/5 flex flex-col gap-8 min-h-[180px]">
+              <div className="text-2xl">🧪</div>
+              <p className="text-gray-300 text-sm leading-snug font-medium">
+                Every car is thoroughly sanitized and cleaned
+              </p>
+            </div>
+
+            {/* Kartochka 2 */}
+            <div className="bg-[#111111]/60 backdrop-blur-sm p-6 rounded-[32px] border border-white/5 flex flex-col gap-8 min-h-[180px]">
+              <div className="text-2xl">❤️</div>
+              <p className="text-gray-300 text-sm leading-snug font-medium">
+                All of our employees wear masks
+              </p>
+            </div>
+
+            {/* Kartochka 3 */}
+            <div className="bg-[#111111]/60 backdrop-blur-sm p-6 rounded-[32px] border border-white/5 flex flex-col gap-8 min-h-[180px]">
+              <div className="text-2xl">📅</div>
+              <p className="text-gray-300 text-sm leading-snug font-medium">
+                We stay up to date with all protocol from the CDC
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Rasm qismi */}
-      <div className="flex-1 relative w-full flex justify-center">
-        <div className="w-64 h-64 md:w-80 md:h-80 bg-[#3CB371] rounded-full absolute bottom-10 opacity-20 blur-3xl"></div>
-        <img 
-          src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&q=80&w=1000" 
-          alt="Safety staff" 
-          className="relative z-10 w-full max-w-[400px] rounded-3xl object-cover shadow-2xl" 
-        />
+        {/* O'ng tomon: Rasm va Yashil doira */}
+        <div className="flex-1 relative flex justify-center items-end min-h-[450px] w-full">
+          {/* Orqadagi yashil doira */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-brand rounded-full"></div>
+          
+          
+          <img 
+            src="/img/hodim.png" 
+            alt="Safety professional" 
+            className="relative z-10 w-full max-w-[350px] object-contain transform translate-y-8"
+          />
+        </div>
+
       </div>
     </section>
   );
 };
 
-export default Safety; // <--- Eng muhimi!
+export default Safety;

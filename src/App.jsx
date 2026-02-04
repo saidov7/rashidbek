@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Safety from './components/Safety';
 import Footer from './components/Footer';
 import LoginModal from './components/LoginModal';
+import Reviews from './components/Reviews';
 
 
 const carsData = [
@@ -22,20 +23,18 @@ function App() {
   const [isLoginOpen, setLoginOpen] = useState(false);
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen min-h-screen bg-[#0F0F0F] text-white font-sans antialiased">
       <Navbar onLoginClick={() => setLoginOpen(true)} />
       
       <main className="max-w-7xl mx-auto px-6">
         <Hero />
-        <Brands />
-        
-        {/* Mashinalar gridi */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-20">
+       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-20">
           {carsData.map(car => (
             <CarCard key={car.id} car={car} />
           ))}
         </div>
-
+        <Reviews />
+        <Brands />
         <Services />
         <Safety />
         <Footer />
